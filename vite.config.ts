@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import ViteFonts from 'unplugin-fonts/vite'
+import vuetify from 'vite-plugin-vuetify'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -22,6 +23,7 @@ export default defineConfig({
         ],
       },
     }),
+    vuetify({ autoImport: true }),
     vueDevTools(),
   ],
   resolve: {
