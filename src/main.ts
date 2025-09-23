@@ -12,6 +12,3 @@ registerPlugins(app)
 app.use(createPinia())
 app.use(router)
 app.mount('#app')
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault()
-})
